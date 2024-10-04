@@ -1,27 +1,20 @@
-# React + TypeScript + Vite
+# Counter (React + TypeScript + Vite + ReduxToolkit)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### [Site link](https://master--react-calendar1.netlify.app/)
 
-Currently, two official plugins are available:
+### The tech stack is:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react) uses Babel for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses SWC for Fast Refresh
+- React
+- TypeScript
+- Vite
+- ReduxToolkit
 
-## Expanding the ESLint configuration
+### Commands:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- npm run preview - to preview build project
+- npm run build - to build production
+- npm run dev - launching the project in dev
 
-- Configure the top-level `parserOptions` property like this:
+### Author
 
-  ```json
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-  ```
-
-- Replace plugin:@typescript-eslint/recommended to plugin:@typescript-eslint/recommended-type-checked or plugin:@typescript-eslint/strict-type-checked
-- Optionally add plugin:@typescript-eslint/stylistic-type-checked
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add plugin:react/recommended & plugin:react/jsx-runtime to the extends list
+- Iryna Kalachenko
