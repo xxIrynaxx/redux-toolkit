@@ -1,6 +1,6 @@
 # Counter (React + TypeScript + Vite + ReduxToolkit)
 
-### [Site link](https://master--react-calendar1.netlify.app/)
+### [Site link](https://redux-toolkit-counter1.netlify.app/)
 
 ### The tech stack is:
 
