@@ -22,29 +22,26 @@ const counterSlice = createSlice({
     incrementByAmount: (state, action: PayloadAction<number>) => {
       state.value += action.payload;
     },
+    reset: state => {
+      state.value = 0;
+    },
   },
   extraReducers: builder => {
     builder
       .addCase(incrementAsync.pending, () => {
         console.log('incrementAsync.pending');
       })
-      .addCase(
-        incrementAsync.fulfilled,
-        (state, action: PayloadAction<number>) => {
-          state.value += action.payload;
-        }
-      );
+      .addCase(incrementAsync.fulfilled, (state, action: PayloadAction<number>) => {
+        state.value += action.payload;
+      });
   },
 });
 
-export const incrementAsync = createAsyncThunk(
-  'counter/incrementAsync',
-  async (amount: number) => {
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    return amount;
-  }
-);
+export const incrementAsync = createAsyncThunk('counter/incrementAsync', async (amount: number) => {
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  return amount;
+});
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { increment, decrement, incrementByAmount, reset } = counterSlice.actions;
 
 export default counterSlice.reducer;

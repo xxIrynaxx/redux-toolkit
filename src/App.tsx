@@ -2,9 +2,11 @@ import Counter from './components/Counter';
 
 const App = () => {
   return (
-    <div>
-      <h2>Redux Complete Tutorial</h2>
-      <Counter />
+    <div className="counter-page">
+      <div className="counter">
+        <h2 className="counter__title">Redux Complete Tutorial</h2>
+        <Counter />
+      </div>
     </div>
   );
 };

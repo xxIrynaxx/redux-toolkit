@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,6 +14,7 @@
   background-color: #242424;
 
   font-synthesis: none;
+  margin: auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -59,4 +66,42 @@ button:hover {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.counter-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.counter__title {
+  font-size: 30px;
+}
+
+.counter__value {
+  font-size: 25px;
+  color: #6870ff;
+  cursor: pointer;
+}
+
+.counter__value:hover {
+  font-size: 25px;
+  color: #000dff;
+}
+
+.btn {
+  margin: 10px 8px 0 0;
+}
+
+.btn:last-child {
+  margin-right: 0;
 }
