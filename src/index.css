@@ -84,17 +84,17 @@ button:hover {
 }
 
 .counter__title {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .counter__value {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
   color: #6870ff;
   cursor: pointer;
 }
 
 .counter__value:hover {
-  font-size: 25px;
   color: #000dff;
 }
 
