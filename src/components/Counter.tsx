@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../state/store';
+import type { AppDispatch, RootState } from '../state/store';
 import {
   decrement,
   increment,
